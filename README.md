@@ -38,4 +38,13 @@ b.txt
 c.txt
 d.txt
 e.txt
+suhua@g7-7588:/tmp/test$ tar -cvf update.tar $(git show --pretty="format:" --name-only 6c21838ab5aff738c2f0a7b0811f2dee180675cb..HEAD | sort | uniq)
+b.txt
+c.txt
+d.txt
+e.txt
+test/b.txt
+test/c.txt
+test/d.txt
+test/e.txt
 ```
